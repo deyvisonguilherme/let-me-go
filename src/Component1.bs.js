@@ -25,6 +25,7 @@ function make(message, _children) {
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function (self) {
               return React.createElement("div", {
+                          className: "btn btn-primary",
                           onClick: Curry._1(self[/* handle */0], handleClick)
                         }, message);
             }),

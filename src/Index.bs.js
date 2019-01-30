@@ -8,6 +8,8 @@ var Greeting$ReactTemplate = require("./Greeting.bs.js");
 var Component1$ReactTemplate = require("./Component1.bs.js");
 var Component2$ReactTemplate = require("./Component2.bs.js");
 
+((require('./main.js')));
+
 ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, Component1$ReactTemplate.make("Hello! Click this text.", /* array */[])), "index1");
 
 ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, Component2$ReactTemplate.make("Hello!", /* array */[])), "index2");
