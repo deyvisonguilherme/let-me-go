@@ -3,19 +3,13 @@
 
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
-var Simple$ReactTemplate = require("./Simple.bs.js");
-var Greeting$ReactTemplate = require("./Greeting.bs.js");
-var Component1$ReactTemplate = require("./Component1.bs.js");
-var Component2$ReactTemplate = require("./Component2.bs.js");
+var MainHeader$ReactTemplate = require("./MainHeader.bs.js");
+var MainSidebar$ReactTemplate = require("./MainSidebar.bs.js");
 
 ((require('./main.js')));
 
-ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, Component1$ReactTemplate.make("Hello! Click this text.", /* array */[])), "index1");
+ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, MainHeader$ReactTemplate.make("ALDEYVT", "AdminLTE", /* array */[])), "header");
 
-ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, Component2$ReactTemplate.make("Hello!", /* array */[])), "index2");
-
-ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, Simple$ReactTemplate.make("Hello", /* array */[])), "index3");
-
-ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, Greeting$ReactTemplate.make("Deyvison Guilherme!", /* array */[])), "index4");
+ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, MainSidebar$ReactTemplate.make("Deyvison Guilherme", "Ativo", /* array */[])), "sidebar");
 
 /*  Not a pure module */
