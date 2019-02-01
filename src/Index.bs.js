@@ -3,13 +3,10 @@
 
 var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
-var MainHeader$ReactTemplate = require("./MainHeader.bs.js");
-var MainSidebar$ReactTemplate = require("./MainSidebar.bs.js");
+var Page$ReactTemplate = require("./Page.bs.js");
 
 ((require('./main.js')));
 
-ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, MainHeader$ReactTemplate.make("ALDEYVT", "AdminLTE", /* array */[])), "header");
-
-ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, MainSidebar$ReactTemplate.make("Deyvison Guilherme", "Ativo", /* array */[])), "sidebar");
+ReactDOMRe.renderToElementWithId(ReasonReact.element(undefined, undefined, Page$ReactTemplate.make(/* array */[])), "build");
 
 /*  Not a pure module */

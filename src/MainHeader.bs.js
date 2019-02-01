@@ -6,7 +6,7 @@ var ReasonReact = require("reason-react/src/ReasonReact.js");
 
 var component = ReasonReact.statelessComponent("MainHeader");
 
-function make(titleMini, titleLarge, _children) {
+function make(param) {
   return /* record */[
           /* debugName */component[/* debugName */0],
           /* reactClassInternal */component[/* reactClassInternal */1],
@@ -18,18 +18,141 @@ function make(titleMini, titleLarge, _children) {
           /* willUpdate */component[/* willUpdate */7],
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function (_self) {
-              return React.createElement("div", {
-                          className: "wrapper"
-                        }, React.createElement("header", {
-                              className: "main-header"
+              return React.createElement("header", {
+                          className: "main-header"
+                        }, React.createElement("a", {
+                              className: "logo",
+                              href: "/"
+                            }, React.createElement("span", {
+                                  className: "logo-mini"
+                                }, "ADMIN"), React.createElement("span", {
+                                  className: "logo-lg"
+                                }, "AdminLTE")), React.createElement("nav", {
+                              className: "navbar navbar-static-top",
+                              role: "navigation"
                             }, React.createElement("a", {
-                                  className: "logo",
-                                  href: "/"
+                                  className: "sidebar-toggle",
+                                  role: "button",
+                                  href: "#"
                                 }, React.createElement("span", {
-                                      className: "logo-mini"
-                                    }, titleMini), React.createElement("span", {
-                                      className: "logo-lg"
-                                    }, titleLarge))));
+                                      className: "sr-only"
+                                    }, "Toggle navigation")), React.createElement("div", {
+                                  className: "navbar-custom-menu"
+                                }, React.createElement("ul", {
+                                      className: "nav navbar-nav"
+                                    }, React.createElement("li", {
+                                          className: "dropdown messages-menu"
+                                        }, React.createElement("a", {
+                                              className: "dropdown-toggle",
+                                              href: "#"
+                                            }, React.createElement("i", {
+                                                  className: "fa fa-envelope-o"
+                                                }), React.createElement("span", {
+                                                  className: "label label-success"
+                                                }))), React.createElement("li", {
+                                          className: "dropdown notifications-menu"
+                                        }, React.createElement("a", {
+                                              className: "dropdown-toggle",
+                                              href: "#"
+                                            }, React.createElement("i", {
+                                                  className: "fa fa-bell-o"
+                                                }), React.createElement("span", {
+                                                  className: "label label-warning"
+                                                })), React.createElement("ul", {
+                                              className: "dropdown-menu"
+                                            }, React.createElement("li", {
+                                                  className: "header"
+                                                }, "You have 10 notifications"), React.createElement("li", undefined, React.createElement("ul", {
+                                                      className: "menu"
+                                                    }, React.createElement("li", undefined, React.createElement("a", {
+                                                              href: "#"
+                                                            }, React.createElement("i", {
+                                                                  className: "fa fa-users text-aqua"
+                                                                }), "5 new members joined today")))), React.createElement("li", {
+                                                  className: "footer"
+                                                }, React.createElement("a", {
+                                                      href: "#"
+                                                    }, "View all")))), React.createElement("li", {
+                                          className: "dropdown tasks-menu"
+                                        }, React.createElement("a", {
+                                              className: "dropdown-toggle",
+                                              href: "#"
+                                            }, React.createElement("i", {
+                                                  className: "fa fa-flag-o"
+                                                }), React.createElement("span", {
+                                                  className: "label label-danger"
+                                                }, "9")), React.createElement("ul", {
+                                              className: "dropdown-menu"
+                                            }, React.createElement("li", {
+                                                  className: "header"
+                                                }, "You have 9 tasks"), React.createElement("li", undefined, React.createElement("ul", {
+                                                      className: "menu"
+                                                    }, React.createElement("li", undefined, React.createElement("a", {
+                                                              href: "#"
+                                                            }, React.createElement("h3", undefined, "Design some buttons", React.createElement("small", {
+                                                                      className: "pull-right"
+                                                                    }, "20")), React.createElement("div", {
+                                                                  className: "progress xs"
+                                                                }, React.createElement("div", {
+                                                                      className: "progress-bar progress-bar-aqua",
+                                                                      role: "progressbar",
+                                                                      style: {
+                                                                        width: "20%"
+                                                                      }
+                                                                    }, React.createElement("span", {
+                                                                          className: "sr-only"
+                                                                        }, "20% Complete"))))))), React.createElement("li", {
+                                                  className: "footer"
+                                                }, React.createElement("a", {
+                                                      href: "#"
+                                                    }, "View all tasks")))), React.createElement("li", {
+                                          className: "dropdown user user-menu"
+                                        }, React.createElement("a", {
+                                              className: "dropdown-toggle",
+                                              href: "#"
+                                            }, React.createElement("img", {
+                                                  className: "user-image",
+                                                  alt: "User Image",
+                                                  src: "dist/img/user2-160x160.jpg"
+                                                }), React.createElement("span", {
+                                                  className: "hidden-xs"
+                                                }, "Deyvison Guilherme")), React.createElement("ul", {
+                                              className: "dropdown-menu"
+                                            }, React.createElement("li", {
+                                                  className: "user-header"
+                                                }, React.createElement("img", {
+                                                      className: "img-circle",
+                                                      alt: "User Image",
+                                                      src: "dist/img/user2-160x160.jpg"
+                                                    }), React.createElement("p", undefined, "Deyvison Guilherme", React.createElement("small", undefined, "Member since Nov. 2012"))), React.createElement("li", {
+                                                  className: "user-body"
+                                                }, React.createElement("div", {
+                                                      className: "row"
+                                                    }, React.createElement("div", {
+                                                          className: "col-xs-4 text-center"
+                                                        }, React.createElement("a", {
+                                                              href: "#"
+                                                            }, "Followers")), React.createElement("div", {
+                                                          className: "col-xs-4 text-center"
+                                                        }, React.createElement("a", {
+                                                              href: "#"
+                                                            }, "Sales")), React.createElement("div", {
+                                                          className: "col-xs-4 text-center"
+                                                        }, React.createElement("a", {
+                                                              href: "#"
+                                                            }, "Friends")))), React.createElement("li", {
+                                                  className: "user-footer"
+                                                }, React.createElement("div", {
+                                                      className: "pull-left"
+                                                    }, React.createElement("a", {
+                                                          className: "btn btn-default btn-flat",
+                                                          href: "#"
+                                                        }, "Profile")), React.createElement("div", {
+                                                      className: "pull-right"
+                                                    }, React.createElement("a", {
+                                                          className: "btn btn-default btn-flat",
+                                                          href: "#"
+                                                        }, "Sign out")))))))));
             }),
           /* initialState */component[/* initialState */10],
           /* retainedProps */component[/* retainedProps */11],

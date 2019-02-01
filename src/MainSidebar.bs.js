@@ -6,7 +6,7 @@ var ReasonReact = require("reason-react/src/ReasonReact.js");
 
 var component = ReasonReact.statelessComponent("MainSidebar");
 
-function make(nameUser, statusLogin, _children) {
+function make(param) {
   return /* record */[
           /* debugName */component[/* debugName */0],
           /* reactClassInternal */component[/* reactClassInternal */1],
@@ -17,7 +17,7 @@ function make(nameUser, statusLogin, _children) {
           /* willUnmount */component[/* willUnmount */6],
           /* willUpdate */component[/* willUpdate */7],
           /* shouldUpdate */component[/* shouldUpdate */8],
-          /* render */(function (_self) {
+          /* render */(function (param) {
               return React.createElement("aside", {
                           className: "main-sidebar"
                         }, React.createElement("section", {
@@ -29,14 +29,14 @@ function make(nameUser, statusLogin, _children) {
                                     }, React.createElement("img", {
                                           className: "img-circle",
                                           alt: "User Image",
-                                          src: "https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/User-info.svg/1024px-User-info.svg.png"
+                                          src: "dist/img/user2-160x160.jpg"
                                         })), React.createElement("div", {
                                       className: "pull-left info"
-                                    }, React.createElement("p", undefined, nameUser), React.createElement("a", {
+                                    }, React.createElement("p", undefined, "Alexander Pierce"), React.createElement("a", {
                                           href: "#"
                                         }, React.createElement("i", {
                                               className: "fa fa-circle text-success"
-                                            }), statusLogin))), React.createElement("form", {
+                                            }), "Online"))), React.createElement("form", {
                                   className: "sidebar-form",
                                   action: "#",
                                   method: "get"
@@ -60,29 +60,33 @@ function make(nameUser, statusLogin, _children) {
                                   className: "sidebar-menu tree"
                                 }, React.createElement("li", {
                                       className: "header"
-                                    }, "MAIN NAVIGATION"), React.createElement("li", {
-                                      className: "active treeview menu-open"
+                                    }, "HEADER"), React.createElement("li", {
+                                      className: "active"
                                     }, React.createElement("a", {
                                           href: "#"
                                         }, React.createElement("i", {
-                                              className: "fa fa-dashboard"
-                                            }), React.createElement("span", undefined, "Dashboard"), React.createElement("span", {
+                                              className: "fa fa-link"
+                                            }), React.createElement("span", undefined, "Link"))), React.createElement("li", undefined, React.createElement("a", {
+                                          href: "#"
+                                        }, React.createElement("i", {
+                                              className: "fa fa-link"
+                                            }), React.createElement("span", undefined, "Another Link"))), React.createElement("li", {
+                                      className: "treeview"
+                                    }, React.createElement("a", {
+                                          href: "#"
+                                        }, React.createElement("i", {
+                                              className: "fa fa-link"
+                                            }), React.createElement("span", undefined, "Multilevel"), React.createElement("span", {
                                               className: "pull-right-container"
                                             }, React.createElement("i", {
                                                   className: "fa fa-angle-left pull-right"
                                                 }))), React.createElement("ul", {
                                           className: "treeview-menu"
                                         }, React.createElement("li", undefined, React.createElement("a", {
-                                                  href: "index.html"
-                                                }, React.createElement("i", {
-                                                      className: "fa fa-circle-o"
-                                                    }), "Dashboard v1")), React.createElement("li", {
-                                              className: "active"
-                                            }, React.createElement("a", {
-                                                  href: "index2.html"
-                                                }, React.createElement("i", {
-                                                      className: "fa fa-circle-o"
-                                                    }), "Dashboard v2")))))));
+                                                  href: "#"
+                                                }, "Link in level 2")), React.createElement("li", undefined, React.createElement("a", {
+                                                  href: "#"
+                                                }, "Link in level 2")))))));
             }),
           /* initialState */component[/* initialState */10],
           /* retainedProps */component[/* retainedProps */11],
