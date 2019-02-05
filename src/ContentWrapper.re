@@ -29,13 +29,23 @@ module PanelContent = {
         render: _self => 
             <div className="content-wrapper" style=(ReactDOMRe.Style.make(~minHeight= "100vh", ()))>
             <Header titleHeader="Dashboard" />
-                <section className="content">
-                    <div className="row"></div>
+                <section className="content container-fluid">
+                    <Boxes.Row>
+                        <Boxes.BoxPrimary />
+                    </Boxes.Row>
+                    /* <div className="row">
+                        <div className="col-md-6">
+                            <div className="box box-primary">
+                                <div className="box-header with-border">
+                                    <h3 className="box-title">(ReasonReact.string("Quick Example"))</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div> */
                 </section>
             </div>,
     };
 };
-
 
 /* module Box = {
     let component = ReasonReact.statelessComponent("Box");
