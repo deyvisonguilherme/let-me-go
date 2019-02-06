@@ -22,34 +22,15 @@ module Header = {
     };
 };
 
-module PanelContent = {
-    let component = ReasonReact.statelessComponent("PanelContent");
-    let make = _=> {
-        ...component,
-        render: _self => 
-            <div className="content-wrapper" style=(ReactDOMRe.Style.make(~minHeight= "100vh", ()))>
-            <Header titleHeader="Dashboard" />
-                <section className="content container-fluid">
-                    <Boxes.Row>
-                        <Boxes.BoxPrimary />
-                    </Boxes.Row>
-                    /* <div className="row">
-                        <div className="col-md-6">
-                            <div className="box box-primary">
-                                <div className="box-header with-border">
-                                    <h3 className="box-title">(ReasonReact.string("Quick Example"))</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div> */
-                </section>
-            </div>,
-    };
-};
 
-/* module Box = {
-    let component = ReasonReact.statelessComponent("Box");
-    let make = (_children) => {
-        render: _self => 
-    };
-} */
+let component = ReasonReact.statelessComponent("ContentWrapper");
+let make = (children)=> {
+    ...component,
+    render: _self => 
+        <div className="content-wrapper" style=(ReactDOMRe.Style.make(~minHeight= "100vh", ()))>
+        <Header titleHeader="Dashboard" />
+            <section className="content container-fluid">
+            ...children
+            </section>
+        </div>,
+};

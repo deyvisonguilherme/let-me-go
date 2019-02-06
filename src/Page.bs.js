@@ -3,6 +3,8 @@
 
 var React = require("react");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
+var Box$ReactTemplate = require("./Box.bs.js");
+var Button$ReactTemplate = require("./Button.bs.js");
 var MainHeader$ReactTemplate = require("./MainHeader.bs.js");
 var MainSidebar$ReactTemplate = require("./MainSidebar.bs.js");
 var ContentWrapper$ReactTemplate = require("./ContentWrapper.bs.js");
@@ -21,7 +23,11 @@ function make(param) {
           /* willUpdate */component[/* willUpdate */7],
           /* shouldUpdate */component[/* shouldUpdate */8],
           /* render */(function (_self) {
-              return React.createElement("div", undefined, ReasonReact.element(undefined, undefined, MainHeader$ReactTemplate.make(/* array */[])), ReasonReact.element(undefined, undefined, MainSidebar$ReactTemplate.make(/* array */[])), ReasonReact.element(undefined, undefined, ContentWrapper$ReactTemplate.PanelContent[/* make */1](/* array */[])));
+              return React.createElement("div", undefined, ReasonReact.element(undefined, undefined, MainHeader$ReactTemplate.make("LetMeGo", /* array */[])), ReasonReact.element(undefined, undefined, MainSidebar$ReactTemplate.make(/* array */[])), ReasonReact.element(undefined, undefined, ContentWrapper$ReactTemplate.make(/* array */[ReasonReact.element(undefined, undefined, Box$ReactTemplate.Row[/* make */1](/* array */[ReasonReact.element(undefined, undefined, Box$ReactTemplate.Col[/* make */1](8, /* array */[
+                                                      ReasonReact.element(undefined, undefined, Box$ReactTemplate.Primary[/* make */1](/* array */[ReasonReact.element(undefined, undefined, Box$ReactTemplate.Header[/* make */1](/* array */[ReasonReact.element(undefined, undefined, Box$ReactTemplate.Title[/* make */1]("Cadastro de clientes", /* array */[]))]))])),
+                                                      ReasonReact.element(undefined, undefined, Box$ReactTemplate.Body[/* make */1](/* array */[ReasonReact.element(undefined, undefined, Button$ReactTemplate.make("btn-primary", "btn-xs", "Clique aqui", /* array */[]))])),
+                                                      ReasonReact.element(undefined, undefined, Box$ReactTemplate.Footer[/* make */1](/* array */[]))
+                                                    ]))]))])));
             }),
           /* initialState */component[/* initialState */10],
           /* retainedProps */component[/* retainedProps */11],

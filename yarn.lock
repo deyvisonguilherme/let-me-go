@@ -3849,6 +3849,11 @@ reason-react@>=0.4.0:
     react ">=15.0.0 || >=16.0.0"
     react-dom ">=15.0.0 || >=16.0.0"
 
+reason-reroute@^0.0.4:
+  version "0.0.4"
+  resolved "https://registry.yarnpkg.com/reason-reroute/-/reason-reroute-0.0.4.tgz#ea480951222da8059c739c645ee9b68860f27738"
+  integrity sha512-UiA5i3tgl28Rl3Fe2/MZ+jA973C/XrRD06RyQH/pUjFPWpqtyKF+YXL2UVLxa0A54C4cX8vjDUcb9oN1LT5ahg==
+
 regenerate@^1.2.1:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/regenerate/-/regenerate-1.4.0.tgz#4a856ec4b56e4077c557589cae85e7a4c8869a11"

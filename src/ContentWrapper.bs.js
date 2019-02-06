@@ -2,6 +2,7 @@
 'use strict';
 
 var React = require("react");
+var ReactDOMRe = require("reason-react/src/ReactDOMRe.js");
 var ReasonReact = require("reason-react/src/ReasonReact.js");
 
 var component = ReasonReact.statelessComponent("BreadCrumb");
@@ -70,9 +71,9 @@ var Header = /* module */[
   /* make */make$1
 ];
 
-var component$2 = ReasonReact.statelessComponent("PanelContent");
+var component$2 = ReasonReact.statelessComponent("ContentWrapper");
 
-function make$2(param) {
+function make$2(children) {
   return /* record */[
           /* debugName */component$2[/* debugName */0],
           /* reactClassInternal */component$2[/* reactClassInternal */1],
@@ -89,11 +90,9 @@ function make$2(param) {
                           style: {
                             minHeight: "100vh"
                           }
-                        }, ReasonReact.element(undefined, undefined, make$1("Dashboard", /* array */[])), React.createElement("section", {
-                              className: "content"
-                            }, React.createElement("div", {
-                                  className: "row"
-                                })));
+                        }, ReasonReact.element(undefined, undefined, make$1("Dashboard", /* array */[])), ReactDOMRe.createElementVariadic("section", {
+                              className: "content container-fluid"
+                            }, children));
             }),
           /* initialState */component$2[/* initialState */10],
           /* retainedProps */component$2[/* retainedProps */11],
@@ -102,12 +101,8 @@ function make$2(param) {
         ];
 }
 
-var PanelContent = /* module */[
-  /* component */component$2,
-  /* make */make$2
-];
-
 exports.BreadCrumb = BreadCrumb;
 exports.Header = Header;
-exports.PanelContent = PanelContent;
+exports.component = component$2;
+exports.make = make$2;
 /* component Not a pure module */

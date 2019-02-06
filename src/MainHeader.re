@@ -1,21 +1,23 @@
-
-let component = ReasonReact.statelessComponent("MainHeader");
-
-let make = (_) => {
+module TitleHeaderPage = {
+let component = ReasonReact.statelessComponent("TitleHeaderPage");
+let make = (~title, _children) => {
   ...component,
-  render: _self =>
-        <header className="main-header">
-            <a href="/" className="logo">
-              <span className="logo-mini">(ReasonReact.string("ADMIN"))</span>
-              <span className="logo-lg">(ReasonReact.string("AdminLTE"))</span>
-            </a>
+    render: _=> {
+      <a href="/" className="logo">
+        <span className="logo-mini">(ReasonReact.string(title))</span>
+        <span className="logo-lg">(ReasonReact.string(title))</span>
+      </a>
+    }
+  };
+};
 
-            <nav className="navbar navbar-static-top" role="navigation">
-            <a href="#" className="sidebar-toggle" role="button">
-              <span className="sr-only">(ReasonReact.string("Toggle navigation"))</span>
-            </a>
 
-              <div className="navbar-custom-menu">
+module NavbarCustomMenu = {
+let component = ReasonReact.statelessComponent("NavbarCustomMenu");
+  let make = (_children) => {
+    ...component,
+    render: _=> {
+          <div className="navbar-custom-menu">
 
                 <ul className="nav navbar-nav">
                    <li className="dropdown messages-menu">
@@ -121,6 +123,25 @@ let make = (_) => {
                 </ul>
 
               </div>
+    }
+  };
+};
+
+
+let component = ReasonReact.statelessComponent("MainHeader");
+let make = (~title: string,_children) => {
+  ...component,
+  render: _self =>
+        <header className="main-header">
+          <TitleHeaderPage title={title} />
+
+            <nav className="navbar navbar-static-top" role="navigation">
+            <a href="#" className="sidebar-toggle" role="button">
+              <span className="sr-only">(ReasonReact.string("Toggle navigation"))</span>
+            </a>
+
+            <NavbarCustomMenu />
+              
             </nav>
         </header>
 };
